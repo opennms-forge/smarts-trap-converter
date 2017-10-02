@@ -1,0 +1,10 @@
+build
+target
+cmake-build-debug
+
+.classpath
+.settings
+.project
+
+.idea
+*.iml

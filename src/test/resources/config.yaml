@@ -1,0 +1,15 @@
+smarts:
+  traps: /tmp/smarts_traps
+opennms:
+  events: /opt/opennms/etc/eventconf.xml
+output:
+  events: /tmp/gen
+mibs:
+  dir: /tmp/mibs
+  mappings:
+    - enterprise-prefix:
+        - .1.3.6.1.2.1.51.3
+      mibs:
+        - RSVP-MIB.my
+      uei-prefix: uei.opennms.org/IETF/RSVP/traps
+      target: ietf.rsvp.events.xml
